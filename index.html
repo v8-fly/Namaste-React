@@ -9,10 +9,47 @@
 </head>
 
 <body>
+    <!-- header and footer are not reactiied -->
+    <header>HEADER</header>
+
     <div id="root">
+        REACT NOT RENDERED
     </div>
+    <footer>FOOTER</footer>
+    <div>
+        <h1>H1</h1>
+        <h2>H2</h2>
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        // React.something (we are using react core library)
+        const heading = React.createElement('h1', {
+            id: 'TESTTTT'
+        }, 'NAMASTE FROM REACT ITSELF !!!😃😃😀')
+
+        const heading2 = React.createElement('h2', {
+
+        }, 'INSIDE SOMETHING --1')
+        const heading3 = React.createElement('h3', {
+
+        }, 'INSIDE SOMETHING -- 2')
+
+        const container = React.createElement('div', {
+            id: "container"
+        }, [heading2, heading3])
+        // ReactDOM.something (we are using react DOM library >> modifies dom)
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        console.log(heading);
+        // Passing React element inside Root 
+        // Render method takes in react element and modifies our dom 
+
+        // Heading gets injected inside our root it overrides what is there inside root 
+
+        root.render(container)
+    </script>
 </body>
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 </html>
