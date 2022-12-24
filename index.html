@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./App.css">
 </head>
 
 <body>
@@ -24,31 +25,31 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-    <script>
+    <script src="./App.js">
         // React.something (we are using react core library)
-        const heading = React.createElement('h1', {
-            id: 'TESTTTT'
-        }, 'NAMASTE FROM REACT ITSELF !!!😃😃😀')
+        // const heading = React.createElement('h1', {
+        //     id: 'TESTTTT'
+        // }, 'NAMASTE FROM REACT ITSELF !!!😃😃😀')
 
-        const heading2 = React.createElement('h2', {
+        // const heading2 = React.createElement('h2', {
 
-        }, 'INSIDE SOMETHING --1')
-        const heading3 = React.createElement('h3', {
+        // }, 'INSIDE SOMETHING --1')
+        // const heading3 = React.createElement('h3', {
 
-        }, 'INSIDE SOMETHING -- 2')
+        // }, 'INSIDE SOMETHING -- 2')
 
-        const container = React.createElement('div', {
-            id: "container"
-        }, [heading2, heading3])
-        // ReactDOM.something (we are using react DOM library >> modifies dom)
-        const root = ReactDOM.createRoot(document.getElementById('root'))
-        console.log(heading);
-        // Passing React element inside Root 
-        // Render method takes in react element and modifies our dom 
+        // const container = React.createElement('div', {
+        //     id: "container"
+        // }, [heading2, heading3])
+        // // ReactDOM.something (we are using react DOM library >> modifies dom)
+        // const root = ReactDOM.createRoot(document.getElementById('root'))
+        // console.log(heading);
+        // // Passing React element inside Root
+        // // Render method takes in react element and modifies our dom
 
-        // Heading gets injected inside our root it overrides what is there inside root 
+        // // Heading gets injected inside our root it overrides what is there inside root
 
-        root.render(container)
+        // root.render(container)
     </script>
 </body>
 
