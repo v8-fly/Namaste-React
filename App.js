@@ -6,8 +6,20 @@ const heading = React.createElement(
   "NAMASTE FROM REACT ITSELF !!!😃😃😀"
 )
 
-const heading2 = React.createElement("h2", {}, "INSIDE SOMETHING --1")
-const heading3 = React.createElement("h3", {}, "INSIDE SOMETHING -- 2")
+const heading2 = React.createElement(
+  "h2",
+  {
+    key: 1,
+  },
+  "INSIDE SOMETHING --1"
+)
+const heading3 = React.createElement(
+  "h3",
+  {
+    key: 2,
+  },
+  "INSIDE SOMETHING -- 2"
+)
 
 const container = React.createElement(
   "div",
