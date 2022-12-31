@@ -1,3 +1,6 @@
+{
+  /* <h1 id = "TESTTTT">"NAMASTE FROM REACT ITSELF !!!😃😃😀"</h1> */
+}
 const heading = React.createElement(
   "h1",
   {
@@ -5,7 +8,9 @@ const heading = React.createElement(
   },
   "NAMASTE FROM REACT ITSELF !!!😃😃😀"
 )
-
+{
+  /* <h2 id = "TESTTTT">"NAMASTE FROM REACT ITSELF !!!😃😃😀"</h2> */
+}
 const heading2 = React.createElement(
   "h2",
   {
@@ -21,10 +26,18 @@ const heading3 = React.createElement(
   "INSIDE SOMETHING -- 2"
 )
 
+{
+  /* <div id = "container">
+  <h1 id = "TESTTTT">"NAMASTE FROM REACT ITSELF !!!😃😃😀"</h1>
+  <h2 id = "TESTTTT">"NAMASTE FROM REACT ITSELF !!!😃😃😀"</h2> 
+</div> */
+}
+
 const container = React.createElement(
   "div",
   {
     id: "container",
+    samjhakya: "123",
   },
   [heading2, heading3]
 )
@@ -36,4 +49,4 @@ console.log(heading)
 
 // Heading gets injected inside our root it overrides what is there inside root
 
-root.render(heading)
+root.render(container)
