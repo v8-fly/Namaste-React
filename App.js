@@ -1,3 +1,6 @@
+import React from "React"
+import ReactDOM from "react-dom/client"
+
 {
   /* <h1 id = "TESTTTT">"NAMASTE FROM REACT ITSELF !!!😃😃😀"</h1> */
 }
@@ -6,7 +9,7 @@ const heading = React.createElement(
   {
     id: "TESTTTT",
   },
-  "NAMASTE FROM REACT ITSELF !!!😃😃😀"
+  "NAMASTE FROM REACT ITSELF HMR out of the box !!!😃😃😀"
 )
 {
   /* <h2 id = "TESTTTT">"NAMASTE FROM REACT ITSELF !!!😃😃😀"</h2> */
@@ -49,4 +52,4 @@ console.log(heading)
 
 // Heading gets injected inside our root it overrides what is there inside root
 
-root.render(container)
+root.render(heading)
