@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import ReactDOM from "react-dom/client"
 
 {
@@ -40,7 +40,7 @@ const container = React.createElement(
   "div",
   {
     id: "container",
-    samjhakya: "123",
+    samjhakya: "12366",
   },
   [heading2, heading3]
 )
